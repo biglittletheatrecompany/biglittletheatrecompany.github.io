@@ -1,82 +1,25 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
-  <head>
-    <meta charset='utf-8'>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css?v=c9a2648a3f65946057511515e96c66045aee4d40">
-
-<!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>The BIG Little Theatre Company</title>
-<meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="The BIG Little Theatre Company" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Big Little Theatre Company" />
-<meta property="og:description" content="Big Little Theatre Company" />
-<link rel="canonical" href="http://www.bltc.org.nz/" />
-<link rel="icon" type="image/png" href="icon.png"/>
-<meta property="og:url" content="http://www.bltc.org.nz/" />
-<meta property="og:site_name" content="Big Little Theatre Company" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Big Little Theatre Company" />
-<script type="application/ld+json">
-{"url":"http://www.bltc.org.nz/","@type":"WebSite","headline":"Big Little Theatre Company","description":"Big Little Theatre Company","name":"Big Little Theatre Company","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-  </head>
-
-  <body>
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="dvcuRkde"></script>
-
-    <!-- HEADER -->
-  #  <div id="header_wrap" class="outer">
-  #      <header class="inner">
-    <center><h1 id="project_title">The BIG Little Theatre Company Inc.</h1></center>
-
-          
-   #     </header>
-   # </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        
-        <p> The Big Little Theatre Company Inc is an Ashburton-based production company providing opportunities for the Big Little Theatre Company Actors to perform in several shows a year.
-          Each show we produce is both extremely high quality and rich in experience for the budding actors.
-          
-        <center><h3>Coming Up (Tickets Available Soon!):</h3>
-        <center><img src="thumbnail_image001.png" class="centerImage" alt="There's an Element of Risk" /></center>
-       
-<right><img src="bltc.jpg"  class="centerImage" alt="bltc" /></right>
-      
-        
-              <p>
-          If you are interested in drama lessons, please look at the BLTC actor training Facebook page, or email cheffernan@xtra.co.nz.
-                
-                   <p>
-           <center><h3 id="https://www.bltc.org.nz/earnest/project_title">Previous Events:</h1></center>
-                      <a href="https://www.bltc.org.nz/frightnight/">Fright Night, 2021</a>
-                     <br>
-          <a href="https://www.bltc.org.nz/earnest/">The Importance of Being Earnest, 2021</a>
-          
-        </p>
-          
-             <center><h2 >Facebook Feed:</h1></center>
-        <div class="fb-page" data-href="https://www.facebook.com/thebiglittletheatrecompany" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/thebiglittletheatrecompany" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/thebiglittletheatrecompany">The Big Little Theatre Company Inc</a></blockquote></div>
-
-
-        </p>
-      </section>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <script src="Midnight.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png"/>
+    <title>Big Little Theatre Company</title>
+</head>
+<body onload="init()">
+    <div class="menu">
+        <img src="logo.png" alt="BLTC Logo" class="menuLogo">
+        <button class="selectedBtn" id="Home" onclick="MenuButtonPress('Home')">Home</button>
+        <button class="menuBtn" id="About" onclick="MenuButtonPress('About')">About Us</button>
+        <button class="menuBtn" id="PastEvents" onclick="MenuButtonPress('PastEvents')">Past Events</button>
+        <button class="menuBtn" id="Photos" onclick="MenuButtonPress('Photos')">Gallery</button>
+        <button class="menuBtn" id="Media" onclick="MenuButtonPress('Media')">Media</button>
+        <button class="menuBtn" id="Contact" onclick="MenuButtonPress('Contact')">Contact Us</button>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-      </footer>
-    </div>
-
-    
-  </body>
+    <embed id="content" src="pages/Home.html">
+</body>
 </html>

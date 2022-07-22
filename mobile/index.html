@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Midnight.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Big Little Theatre Company</title>
+</head>
+<body onload="init()">
+    <button class="menuIcon" onclick="OpenMenu()">☰</button>
+    <div class="menu" id="menu" style="left:-90%;">
+        <div class="visibleMenu" id="visibleMenu">  
+            <img src="../logo.png" alt="BLTC Logo" class="menuLogo">
+            <div style="top: 16vh; position: absolute; margin: 0%; width: 100%;">
+                <hr>
+                <button class="selectedBtn" id="Home" onclick="MenuButtonPress('Home')">Home</button>
+                <hr>
+                <button class="menuBtn" id="About" onclick="MenuButtonPress('About')">About Us</button>
+                <hr>
+                <button class="menuBtn" id="PastEvents" onclick="MenuButtonPress('PastEvents')">Past Events</button>
+                <hr>
+                <button class="menuBtn" id="Photos" onclick="MenuButtonPress('Photos')">Gallery</button>
+                <hr>
+                <button class="menuBtn" id="Media" onclick="MenuButtonPress('Media')">Media</button>
+                <hr>
+                <button class="menuBtn" id="Contact" onclick="MenuButtonPress('Contact')">Contact Us</button>
+            </div>
+        </div>
+    </div>
+    <embed id="content" src="pages/Home.html">
+
+</body>
+</html>
