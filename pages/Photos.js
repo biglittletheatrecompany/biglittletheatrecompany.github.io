@@ -29,7 +29,7 @@ function selectPhoto(id){
     }
     const buttons = document.querySelectorAll('.selectedImageButtons');
     buttons.forEach(button => {
-        button.style.opacity = '0.4';
+        button.style.opacity = '1';
     })
     setTimeout(move, 1, id, String((window.innerWidth/2) - (oldDimensions.w*(window.innerHeight*0.9/oldDimensions.h))/2) + "px", "5%")
     
