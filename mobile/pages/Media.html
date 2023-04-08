@@ -1,3 +1,20 @@
-<body style="background-color: #E7F6F2;">
-    <img src="media.png" alt="Gallery Photos" style="width: 100%;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="Media.js"></script>
+	<style>
+		img{
+			transition: all 0.5s;
+		}
+		div{
+			transition: opacity 0.5s;
+		}
+	</style>
+</head>
+<body onload="renderPhotos()" style="background-color: black; text-align: center;">
+	<div class="selectedImageButtons" onclick="deselect()" style="width: 5vh; height: 5vh; background-color: gray; opacity: 0; position: absolute; right: 2vh; top: 2vh; font-size: 3.5vh;">✖</div>
 </body>
+</html>
