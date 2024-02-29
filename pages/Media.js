@@ -1,4 +1,4 @@
-const PHOTONUM = 37
+const PHOTONUM = 36
 selectedPhoto = 0
 photoSelected = false
 function renderPhotos(){
